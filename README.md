@@ -57,7 +57,7 @@ src/
 
 1.  **Clone the repository:**
     ```bash
-    https://github.com/0xtusharganotra/Pokedex.git
+    https://github.com/Vanshjin/PokeDex
     ```
 2.  **Install dependencies:**
     ```bash
@@ -69,7 +69,7 @@ src/
     ```
 4.  **Open in browser:**
     ```
-    http://localhost:5173
+    http://localhost:5173/
     ```
 
 -----
