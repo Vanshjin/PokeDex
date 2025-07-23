@@ -23,7 +23,8 @@ A sleek and modern **Pokédex web application** built using **React + Vite** tha
 
 https://pokedex-eight-silk-12.vercel.app/
 
-![alt text](image.png)
+<img width="948" height="416" alt="image" src="https://github.com/user-attachments/assets/cf35f417-6e8e-45bc-a4e7-17bd97a38254" />
+
 
 
 -----
