@@ -1,26 +1,24 @@
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-
-
 body {
-  
-  background: url('/gradient.svg');
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%
+  );
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   min-width: auto;
   background-position: center;
-  
-
 }
-
 
 h1,
 h2,
@@ -85,7 +83,6 @@ header {
   margin-bottom: 3.2rem;
 }
 
-
 input[type="text"] {
   appearance: none;
   border: none;
@@ -97,7 +94,6 @@ input[type="text"] {
   padding: 5px;
   font-size: 16px;
   color: #000000;
-  
 }
 
 .cards {
@@ -109,7 +105,8 @@ input[type="text"] {
 }
 
 .pokemon-card {
-  background: url('/gradient.svg');
+  /* background: url("/gradient.svg"); */
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f);
   background-repeat: no-repeat;
   background-size: cover;
   width: 300px;
@@ -121,8 +118,6 @@ input[type="text"] {
   padding: 1.6rem;
   position: relative;
 }
-
-
 
 .pokemon-card:hover {
   transform: scale(1.03);
@@ -147,7 +142,6 @@ figure {
   text-transform: capitalize;
 }
 
-
 .pokemon-info {
   width: 100%;
   height: auto;
@@ -155,14 +149,13 @@ figure {
   margin-bottom: 20px;
 }
 
-.pokehws{
+.pokehws {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-
-.loading{
+.loading {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -172,7 +165,7 @@ figure {
   font-size: large;
 }
 
-.inputbox{
+.inputbox {
   display: flex;
   border-radius: 10px;
   background: white;
@@ -180,35 +173,33 @@ figure {
   justify-content: center;
   align-items: center;
   gap: 10px;
-    margin-bottom: 60px;
-    margin-top: 20px;
-    height: 50px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  height: 50px;
 }
 
-.inputbox svg{
+.inputbox svg {
   cursor: pointer;
   font-size: 35px;
 }
 
-.pokeimg{
- 
+.pokeimg {
   width: 60%;
   height: 180px;
-
 }
 
-.pokeimg svg{
+.pokeimg svg {
   font-size: 30px;
 }
 
-.type{
+.type {
   height: 18px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.ptype{
+.ptype {
   width: 100px;
   height: 18px;
   background: white;
@@ -217,6 +208,7 @@ figure {
 /* Navbar */
 .navbar {
   display: flex;
+  background: #000000;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -235,7 +227,7 @@ figure {
 .nav-links a {
   text-decoration: none;
   color: #555;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 .nav-links a:hover {
   color: #e63946;
@@ -249,7 +241,7 @@ figure {
 }
 .hero h1 {
   font-size: 2.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .hero p {
   margin-bottom: 1.5rem;
@@ -259,8 +251,8 @@ figure {
 }
 .hero-buttons button {
   cursor: pointer;
-  padding: .75rem 1.5rem;
-  margin: .5rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
   border: none;
   border-radius: 25px;
   font-size: 1rem;
@@ -276,7 +268,7 @@ figure {
 }
 
 /* Stats section */
-.stats {
+/* .stats {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -287,11 +279,46 @@ figure {
 }
 .stat .icon {
   font-size: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .stat .number {
   font-size: 1.5rem;
   font-weight: bold;
+} */
+
+.stats {
+  display: flex;
+  justify-content: space-around; /* equal horizontal spacing */
+  align-items: center; /* vertical centering */
+  padding: 2rem 1rem;
+  flex-wrap: wrap; /* allows wrapping on narrow screens */
+  gap: 1rem; /* consistent spacing between items */
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers icon + text under each other */
+  text-align: center;
+  max-width: 120px; /* optional width limit */
+}
+
+.stat-item .icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item .number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 600px) {
+  .stats {
+    flex-direction: column;
+    gap: 3rem;
+  }
 }
 
 /* Responsive */
@@ -303,4 +330,8 @@ figure {
     flex-direction: column;
     gap: 1.5rem;
   }
+}
+
+PokemonCard {
+  zoom: 80%;
 }

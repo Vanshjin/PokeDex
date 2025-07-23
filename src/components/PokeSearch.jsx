@@ -1,10 +1,6 @@
 import { MdOutlinePersonSearch } from "react-icons/md";
 
 function PokeSearch(props){
-
-    
-
-    
     return(
         <div style={{display:"flex" , justifyContent:"center"}}>
                 <div className="inputbox">
